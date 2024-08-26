@@ -28,7 +28,7 @@ namespace Ware_house
             //initial Database:
             using (var ctx=new WarehouseContext())
             {
-                ctx.Users.Add(new User { Name = "Hamed", Family = "Bahmanyar",Password="1234" });
+                ctx.Users.Add(new User { Name = "Hamed", Password="1234" });
                 ctx.SaveChanges();
             }
         }

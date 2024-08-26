@@ -12,12 +12,11 @@ namespace Ware_house.DatabaseContext
 {
     public class WarehouseContext:DbContext
     {
-        public WarehouseContext():base("name=WarehouseDB") 
+        public WarehouseContext():base("name=WarehouseDBConnectionString") 
         {
-            Database.SetInitializer<WarehouseContext>(new CreateDatabaseIfNotExists<WarehouseContext>());
-
-
+            Database.SetInitializer<WarehouseContext>(new DropCreateDatabaseIfModelChanges<WarehouseContext>());
         }
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Corporate> Corporates { get; set; }
         public DbSet<InputFactor> InputFactors { get; set; }

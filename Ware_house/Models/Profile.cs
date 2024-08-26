@@ -8,6 +8,7 @@ namespace Ware_house.Models
 {
     public class Profile
     {
+        public long Id { get; set; }
         public string ProfileName { get; set; }
         public string ProfilePhone { get; set; }
         public string profileAddress { get; set; }
