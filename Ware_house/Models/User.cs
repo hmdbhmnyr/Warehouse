@@ -12,6 +12,7 @@ namespace Ware_house.classes
     [Table("UserInfo",Schema ="user")]
     public class User
     {
+        [Key]
         public int ID { get; set; }
         [Column("FullName",TypeName ="nvarchar")]
         [MaxLength(50)]

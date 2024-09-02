@@ -1,0 +1,9 @@
+bin
+obj
+bin/
+obj/
+.vs
+.vs/
+Ware_house/bin
+Ware_house/bin/
+Ware_house/bin/*
