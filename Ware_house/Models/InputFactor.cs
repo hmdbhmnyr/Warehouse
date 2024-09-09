@@ -23,6 +23,7 @@ namespace Ware_house.Models
         public string DriverName { get; set; }
         public User user { get; set; }
         public string Pelak { get; set; }
+        public ICollection<InputFactorItem> inputFactorItems { get; set; }
 
     }
 }

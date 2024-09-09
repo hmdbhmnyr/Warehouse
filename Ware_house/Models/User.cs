@@ -9,10 +9,14 @@ using Ware_house.Models;
 
 namespace Ware_house.classes
 {
+    public enum UserType
+    {
+        Admin,Customer,Employee
+    }
     public class User
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+        public double ID { get; set; }
         public string Name { get; set; }
         public string Family { get; set;}
         public string Username { get; set; }
@@ -23,7 +27,7 @@ namespace Ware_house.classes
         public string Address { get; set; }
         public string City { get; set; }
         [MaxLength(20)]
-        public string Usertype { get; set; }
+        public UserType Usertype { get; set; }
         [MaxLength(10)]
         public string Nationcode { get; set; }
         [MaxLength(10)]
@@ -32,6 +36,6 @@ namespace Ware_house.classes
 
         public ICollection<OutputFactor> OutputFactors { get; set; }
         public ICollection<InputFactor> InputFactors { get; set; }
-        public ICollection<OutputFactor> outputFactors { get; set; }
+
     }
 }

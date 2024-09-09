@@ -15,7 +15,8 @@ namespace Ware_house.DatabaseContext
         public WarehouseContext():base("name=WarehouseDB") 
         {
             Database.SetInitializer<WarehouseContext>(new DropCreateDatabaseAlways<WarehouseContext>());
-
+  
+            
 
         }
         public DbSet<Category> Categories { get; set; }
@@ -31,6 +32,25 @@ namespace Ware_house.DatabaseContext
 
         public DbSet<Warranty> Warranties { get; set;}
 
-        
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            CreateUserConfig(modelBuilder);
+            
+        }
+        protected void CreateUserConfig(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>().HasKey(u => u.ID);
+            modelBuilder.Entity<User>()
+                        .Property(p => p.Name)
+                        .HasMaxLength(30)
+                        .HasColumnName("full_name")
+                        .HasColumnOrder(3)
+                        .HasColumnType("varchar");
+
+
+        }
+
+
     }
 }
