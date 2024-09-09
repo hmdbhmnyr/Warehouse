@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ware_house.classes;
 
 namespace Ware_house.Models
 {
@@ -12,5 +13,7 @@ namespace Ware_house.Models
         public DateTime Date { get; set; }
         
         public int EmployeeId { get; set; }
+        public User User { get; set; }
+
     }
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\App.xaml
-11407045341
+31191756269
 
-7-1640441249
+16428394600
 198-1445589086
-MainWindow.xaml;
+Forms\MainWindow.xaml;Forms\User\WindowAddUser.xaml;Forms\User\windowLogin.xaml;
 
 False
 

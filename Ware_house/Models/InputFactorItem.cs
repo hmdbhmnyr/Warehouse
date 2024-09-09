@@ -10,7 +10,7 @@ namespace Ware_house.Models
     {
         public int Id { get; set; }
         public int FactorId { get; set; }
-
+        public Product Product { get; set; }
         public int  InputFactorItemQuntity { get; set;} 
         public int  InputFactorItemPrice { get; set;} 
         public int  InputFactorItemDiscount { get; set;} 

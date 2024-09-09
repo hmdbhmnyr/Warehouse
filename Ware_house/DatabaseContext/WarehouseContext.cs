@@ -14,7 +14,7 @@ namespace Ware_house.DatabaseContext
     {
         public WarehouseContext():base("name=WarehouseDB") 
         {
-            Database.SetInitializer<WarehouseContext>(new CreateDatabaseIfNotExists<WarehouseContext>());
+            Database.SetInitializer<WarehouseContext>(new DropCreateDatabaseAlways<WarehouseContext>());
 
 
         }
@@ -25,8 +25,12 @@ namespace Ware_house.DatabaseContext
         public DbSet<InputFactorItem> InputFactorItems { get; set; }
         public DbSet<OutputFactorItem> OutputFactorItems { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Profile> Profiles { get; set; }
+        
         public DbSet<Product> Products { get; set; }
+        public DbSet<Profile> Profiles { get; set; }
+
+        public DbSet<Warranty> Warranties { get; set;}
+
         
     }
 }

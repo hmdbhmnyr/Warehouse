@@ -8,7 +8,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Forms\Adduser.png" />
+    <None Remove="Forms\cancel_80px.png" />
+    <None Remove="Forms\invoice.png" />
+    <None Remove="Forms\ok_80px.png" />
+    <None Remove="Forms\purchaseinvoice.png" />
+    <None Remove="Forms\Searchinvoice.png" />
+    <None Remove="Forms\SearchProducts.png" />
+    <None Remove="Forms\searchuser.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icon\Searchinvoice.png" />
+    <Resource Include="Resources\icon\invoice.png" />
+    <Resource Include="Resources\icon\Adduser.png" />
+    <Resource Include="Resources\icon\SearchProducts.png" />
+    <Resource Include="Resources\icon\searchuser.png" />
+    <Resource Include="Resources\icon\cancel_80px.png" />
+    <Resource Include="Resources\icon\ok_80px.png" />
   </ItemGroup>
 
 </Project>

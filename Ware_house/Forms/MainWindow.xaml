@@ -1,0 +1,80 @@
+﻿<Window x:Class="Ware_house.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ware_house"
+        mc:Ignorable="d"
+        Title="صفحه اصلی" Height="450" Width="800" WindowStartupLocation="CenterScreen" FlowDirection="RightToLeft"
+        WindowState="Maximized" FontSize="12" FontFamily="b titr" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="نرم افزار مدیریت انبار افق " Foreground="#FFF00000"></Label>
+        </StackPanel>
+        <TabControl Grid.Row="1">
+            <TabItem Header="فاکتور"  Width="80" Margin="3">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <Button Margin="3" Width="100" Height="50">
+                        <DockPanel>
+                            <Label Content="فاکتورفروش"></Label>
+                            <Image Source="/Resources/icon/invoice.png" ></Image>
+                        </DockPanel>
+                    </Button>
+                    <Button Margin="3" Width="100" Height="50">
+                        <DockPanel>
+                            <Label Content="فاکتور خرید"></Label>
+                            <Image Source="/Resources/icon/invoice.png" ></Image>
+                        </DockPanel>
+                    </Button>
+                    <Button Margin="3" Width="120" Height="50">
+                        <DockPanel>
+                            <Label Content="جست وجوی فاکتور"></Label>
+                            <Image Source="/Resources/icon/Searchinvoice.png"  ></Image>
+                        </DockPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="کاربران" Width="80" Height="40" Margin="3">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Button  Width="100" Height="40" Margin="3">
+                        <DockPanel>
+                            <Label Content="ثبت کاربر"></Label>
+                            <Image Source="/Resources/icon/Adduser.png" ></Image>
+                        </DockPanel>
+                    </Button>
+                    <Button Width="130" Height="40" Margin="3">
+                        <DockPanel>
+                            <Label Content="جست و جوی کاربران"></Label>
+                            <Image Source="/Resources/icon/searchuser.png"></Image>
+                        </DockPanel>
+                    </Button>
+                    
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="کالا" Width="80" Margin="3">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button Margin="5" Width="110" Height="50">
+                        <DockPanel>
+                            <Label Content="جست و جوی کالا" VerticalContentAlignment="Center"></Label>
+                            <Image Source="/Resources/icon/SearchProducts.png" ></Image>
+                        </DockPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="انبار"  Width="80" Margin="3">
+                
+            </TabItem>
+            <TabItem Header="ابزار" Width="80" Margin="3">
+                
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="2" Background="#FFB0E9DB">
+        </StackPanel>
+    </Grid>
+</Window>

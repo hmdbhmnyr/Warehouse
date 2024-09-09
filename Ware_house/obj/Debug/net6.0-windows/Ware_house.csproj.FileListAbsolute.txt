@@ -14,11 +14,9 @@ C:\Users\HAMED\source\repos\Ware_house\Ware_house\bin\Debug\net6.0-windows\runti
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house.csproj.AssemblyReference.cache
-C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house_MarkupCompile.cache
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house_MarkupCompile.lref
-C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house.g.resources
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house.AssemblyInfoInputs.cache
@@ -30,3 +28,9 @@ C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\refin
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house.pdb
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Ware_house.genruntimeconfig.cache
 C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\ref\Ware_house.dll
+C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Forms\MainWindow.g.cs
+C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Forms\User\windowLogin.g.cs
+C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Forms\MainWindow.baml
+C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Forms\User\windowLogin.baml
+C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Forms\User\WindowAddUser.g.cs
+C:\Users\HAMED\source\repos\Ware_house\Ware_house\obj\Debug\net6.0-windows\Forms\User\WindowAddUser.baml
