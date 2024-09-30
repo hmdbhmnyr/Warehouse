@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Ware_house.DatabaseContext;
 using Ware_house.classes;
+using Ware_house.Models.TestModel;
 
 namespace Ware_house
 {
@@ -28,8 +29,24 @@ namespace Ware_house
             //initial Database:
             using (var ctx=new WarehouseContext())
             {
-                ctx.Users.Add(new User { ID=1,Name="Hamed",Family="Bahmanyar", Password="1234",Address="esfahan"});
-                ctx.Users.Add(new User { ID=1,Name="ali",Family="Ahmadian", Password="1234",Address="tehran"});
+                StudentAddress studentAddress1 = new StudentAddress
+                {
+                    Address1 = "Texas",
+
+                };
+                StudentAddress studentAddress2 = new StudentAddress
+                {
+                    Address1 = "Tehran",
+
+                };
+                List<StudentAddress> studentAddresses = new List<StudentAddress>();
+                studentAddresses.Add(studentAddress1);
+                studentAddresses.Add(studentAddress2);
+
+                ctx.Students.Add(new Student { StudentName = "Ali",Address = studentAddresses });
+
+                ctx.Users.Add(new User {ID =1, Name="Hamed",Family="Bahmanyar", Password="1234",Address="esfahan"});
+                //ctx.Users.Add(new User { ID=1,Name="ali",Family="Ahmadian", Password="1234",Address="tehran"});
                 ctx.SaveChanges();
             }
         }

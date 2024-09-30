@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Ware_house.classes;
 using Ware_house.Models;
+using Ware_house.Models.TestModel;
 
 namespace Ware_house.DatabaseContext
 {
@@ -31,6 +32,10 @@ namespace Ware_house.DatabaseContext
         public DbSet<Profile> Profiles { get; set; }
 
         public DbSet<Warranty> Warranties { get; set;}
+        public DbSet<StudentAddress> StudentAddresses { get; set;}
+        public DbSet<Student> Students { get; set;}
+
+
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -47,6 +52,8 @@ namespace Ware_house.DatabaseContext
                         .HasColumnName("full_name")
                         .HasColumnOrder(3)
                         .HasColumnType("varchar");
+
+  
 
 
         }

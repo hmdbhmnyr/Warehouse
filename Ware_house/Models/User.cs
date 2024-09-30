@@ -14,8 +14,8 @@ namespace Ware_house.classes
         Admin,Customer,Employee
     }
     public class User
-    {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    { 
+    
         public double ID { get; set; }
         public string Name { get; set; }
         public string Family { get; set;}
@@ -27,7 +27,7 @@ namespace Ware_house.classes
         public string Address { get; set; }
         public string City { get; set; }
         [MaxLength(20)]
-        public UserType Usertype { get; set; }
+        public String Usertype { get; set; }
         [MaxLength(10)]
         public string Nationcode { get; set; }
         [MaxLength(10)]
