@@ -26,7 +26,7 @@ namespace Ware_house.DatabaseContext
         public DbSet<OutputFactor> OutputFactors { get; set; }
         public DbSet<InputFactorItem> InputFactorItems { get; set; }
         public DbSet<OutputFactorItem> OutputFactorItems { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<UserModel> Users { get; set; }
         
         public DbSet<Product> Products { get; set; }
         public DbSet<Profile> Profiles { get; set; }
@@ -45,8 +45,8 @@ namespace Ware_house.DatabaseContext
         }
         protected void CreateUserConfig(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().HasKey(u => u.ID);
-            modelBuilder.Entity<User>()
+            modelBuilder.Entity<UserModel>().HasKey(u => u.ID);
+            modelBuilder.Entity<UserModel>()
                         .Property(p => p.Name)
                         .HasMaxLength(30)
                         .HasColumnName("full_name")
